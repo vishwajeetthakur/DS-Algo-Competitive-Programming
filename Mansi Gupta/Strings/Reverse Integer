@@ -1,0 +1,20 @@
+class Solution {
+    public int reverse(int x) {
+        if(x==0)
+            return 0;
+    
+        int r,n=x;
+            long s=0;
+     while(n!=0)
+     {
+        r=n%10;
+        s=s*10+r;
+         n/=10;
+     }
+            if(((s>-Math.pow(2,31)) && (s<Math.pow(2,31)-1)))
+              return (int)s;
+            else
+                return 0;
+
+    }
+}

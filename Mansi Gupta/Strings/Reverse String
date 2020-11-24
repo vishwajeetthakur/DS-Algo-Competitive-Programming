@@ -1,0 +1,17 @@
+class Solution {
+    public void reverseString(char[] s) {
+        
+       int i,j;
+        char a;
+        i=0;
+        j=s.length-1;
+            for(i=0;i<(s.length/2);i++)
+            {
+              a=s[i];
+                s[i]=s[j];
+                s[j]=a;
+                j--;
+            }
+        
+    }
+}
