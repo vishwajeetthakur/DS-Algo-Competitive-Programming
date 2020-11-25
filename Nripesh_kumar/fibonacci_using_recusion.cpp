@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 int fibo(int n)
@@ -25,9 +24,6 @@ int main()
 	cin>>n;
 	
 	int f=fibo(n);
-	
 	cout<<f;
 	return 0;
-
-return 0;
 }
